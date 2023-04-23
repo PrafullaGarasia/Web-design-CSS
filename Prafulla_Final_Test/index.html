@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Comic Book Origins</title>
+        <link rel="stylesheet" href="css/myersReset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Captain America</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "#">Cap History</a></li>
+                    <li><a href = "#">Comics History</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Add the video here - remove the div-->
+            <h2>The Return!</h2>
+            <!-- <div>REPLACE THIS DIV WITH THE VIDEO</div> -->
+            
+            <video controls>
+                <source src="video/Return_of_Captain_America_trailer.webm" type="video/webm"/>
+                <source src="video/Return_of_Captain_America_trailer_512kb.mp4" type="video/mp4"/>
+                Your browser does not support HTML5 video.  Try upgrading your browser if you can.
+             </video>
+            
+            <section>
+                <h3>Captain America History</h3>
+                <article>
+                    <img src="img/shield.png" alt="Shield icon"/>
+                    <h4>Creation</h4>
+                    <p>Created in 1940 by Joe Simon.</p>  
+                    <p>Debuted in 1941 - Captain America Comics #1.</p>
+                </article>
+                <article>
+                    <img src="img/team.png" alt="Team icon"/>
+                    <h4>Team Cap</h4>
+                    <p>Over the years, Captain America has had multiple team members.</p>  
+                    <p>His first team was called the Howling Commandos and had his best friend Bucky Barnes.</p>
+                </article>
+                <article>
+                    <img src="img/comicBook.png" alt="Book icon"/>
+                    <h4>How much?</h4>
+                    <p>The most expensive Captain America comic was sold in 2019. </p>
+                    <p>It sold at Heritage auctions for $915,000!</p>
+                    
+                </article>    
+            </section>
+            
+                 <form action="#" method="get">
+                    <h4>Sign up to the Captain America Fan Club</h4>
+                    <fieldset>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required/>
+                    </fieldset>
+                    <fieldset>
+                        <legend>I have read and understand the club rules</legend>
+                        <label for="Yes">Yes</label>
+                        <input type="radio" id="Yes" name="rules" value="Yes" checked/>
+                        <label for="No">No</label>
+                        <input type="radio" id="No" name="rules" value="No"/>
+                    </fieldset>
+                    <input type="submit" name="submit" value="Submit Form"/>
+                </form>
+        </main>
+        <footer>
+            <p>&copy; 2022 - Prafulla Kalusinh Garasia</p>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/*
+   
+	Assignment:4
+	Author: Prafulla Kalusinh Garasia
+	Student No.: 0797964
+    Date:   2022-02-16
+	Filename: external.css
+	Copyright: 2022-All rights reserved
+   
+*/
+
+/*
+Color Guide:
+
+#489e3b:shade of green
+#fabd42:shade of yellow
+#cd0a20:shade of pink-red
+rgba(0, 0, 0, 0.4): black
+rgba(255, 255, 255, 0.4): white
+#434343:shade of gray
+#B70B0D: medium dark shade of pink-red
+rgba(127,96,17,1.0):medium dark shade of yellow
+hsl(0, 0%, 100%):very light shade of gray
+rgba(0, 0, 0,0.6):black
+#fbb034:shade of brown
+hsl(0, 100%, 35%):medium dark shade of red
+rgba(60, 0, 0,1):very dark shade of red
+rgb(102, 0, 51,0.6):dark shade of pink.
+hsl(120, 100%, 5%):very dark shade of green
+*/
+
+/*
+Typography Guide:
+
+Body: Verdana, Geneva, sans-serif - 1em
+body p:Times New Roman, Times, serif - 1.7em
+
+Hedings:
+main h1 figcaption: 1.1em
+h2: 2em
+h1,h2: Times New Roman, Times, serif
+
+nav ul li a: 1em
+ul,li: 1em
+article ul li: 15px
+
+article h3::first-letter - 150%
+article : 0.8em
+
+figcaption,aside,footer   : 1em
+
+aside ul: 15px
+
+*/
+
+/*
+Table of Contents:
+
+1.HTML & Body Styles
+2.Heading Styles
+3.Navigation Styles
+4.List Styles
+5.Article Styles
+6.Paragraph Styles
+7.Figure Styles
+8.Aside Styles
+9.Footer Styles
+*/
+
+/*
+1.HTML & Body Styles*/
+html {
+	height: 100%;
+	margin: 0px auto;
+	font-size: 14px;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 900px;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	margin: 0px auto auto auto;
+	clear: none;
+	float: none;
+	min-height: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background: linear-gradient(to left, #489e3b, #fabd42, #cd0a20);
+	background: linear-gradient(to right, #489e3b, #fabd42, #cd0a20);
+	box-shadow:inset -1px -1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+ 
+body p{
+	margin: 3.5% 1%;
+	font-size: 1.7em;
+	font-family: "Times New Roman", Times, serif;
+	font-style: normal;
+	height: 100%;
+}
+
+/* 2.Heading Styles */
+
+main h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main h1 figcaption{
+	font-size:1.1em;
+}
+
+h2{
+	background: -webkit-linear-gradient(#434343, #B70B0D);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: normal;
+	margin: 0 0 10px ;
+	font-size: 2em;
+	text-align: left;
+}
+
+h1,h2 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* 3.Navigation Styles */	
+
+nav {
+	margin: 0 0 8px;
+	display: table;
+	width: 100%;
+}
+
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+
+nav ul li {
+	display: table-cell;
+	width: 15%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid rgba(127,96,17,1.0);
+	border-collapse: collapse;
+}
+
+nav ul li a {
+	font-size: 1em;
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	display: block;	
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	background-color: rgba(0, 0, 0,0.6);
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	background-color: #fbb034;
+	color: hsl(0, 0%, 100%);
+	text-decoration: underline;
+}
+
+/* 4.List Styles */
+
+ul{
+	font-size: 1em;
+	list-style-type: none;
+	
+}
+
+li{
+	list-style-type: none;
+	color:hsl(0, 100%, 35%);
+	font-size: 1em;
+	line-height: 1.7em;
+}
+
+article ul li:first-child {
+  color: brown;
+  font-size: 15px;
+  
+}
+
+article ul li{
+	list-style-type: none;
+	color:hsl(0, 100%, 35%);
+	font-size: 15px;
+	line-height: 1.7em;
+}
+
+/* 5.Article Styles */
+
+article p{
+	line-height: normal;
+	text-align:justify;
+}
+
+article h2::first-letter {
+  font-size: 150%;
+}
+
+article {
+	font-size: 0.8em;
+	text-align: left;
+}
+
+/*6.Paragraph Styles*/
+
+p{
+	color:rgba(60, 0, 0,1);
+}
+
+p:first-of-type {
+  color: black;
+}
+
+/* 7.Figure Styles */
+
+figure {
+  padding: 2px;
+  margin: auto;
+}
+
+img{
+	width:210px;
+	border-radius: 10%;
+	
+}
+
+figcaption {
+  color: hsl(0, 0%, 100%);
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  font-size:1.2em;
+  
+}
+
+/* 8.Aside Styles */
+
+aside {
+	float: right;
+	margin: 0 0 20px 20px;
+	padding: 2%;
+	width: 50%;
+	font-size: 1em;
+	background-color: transparent;
+}
+
+aside ul{
+	margin: 0 0 20px 20px;
+	font-size: 15px;
+}
+
+/* 9.Footer Styles */
+
+footer {
+	text-align: center;
+	font-size: 1em;
+	margin-top: 4%;
+	border-top: 3px outset rgb(102, 0, 51,0.6);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	clear: both;
+	padding-bottom: 20px;
+	color: hsl(120, 100%, 5%);
+}

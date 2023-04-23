@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/*  
+	Assignment:2
+   	Author: Prafulla Kalusinh Garasia
+	Student Number: 0797964
+   	Date:   2022-02-01
+	Filename: external.css
+
+*/
+
+/* HTML and Body Styles */
+
+html {
+	background-color: #953e3c;
+	height: 100%;
+	margin: 0px auto;
+	font-size: 14px;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	max-width: 900px;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	margin: 0px auto auto auto;
+	clear: none;
+	float: none;
+	min-height: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	background-color: white;
+	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+}
+
+body p{
+	margin: 3.5% 1%;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	font-style: normal;
+	height: 100%;
+}
+
+/* Heading Styles */
+
+main#a h1 {
+	color: white;
+	background-color: rgb(74,31,30);
+}
+
+h1 {
+	margin: 1%;
+	text-align:center;
+}
+
+h2 {
+	font-size: 1.8em;
+	color:maroon;
+}
+
+h1,h2 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+/* Article Styles */
+
+article img {
+	float: right;
+	width: 300px;
+	margin: 2% 2% 2% 2%;
+	border-radius: 50%;
+}
+article *:first-child {
+  font-size: 2.2em;
+}
+
+article p{
+	text-align:justify;
+}
+
+article p#b:first-line{
+	font-size: 120%;
+	text-align:justify;
+	font-weight:bold;
+}
+article {
+	font-size: 0.8em;
+	text-align: left;
+}
+
+/*Paragraph Styles*/
+
+h2 ~ p {
+    
+    background-color: #BDB76B;
+    color: #006400;
+    padding: .5em;
+}
+article p:first-of-type::first-letter {
+  color: saddlebrown;
+  font-size: 150%;
+}
+
+p:first-of-type {
+  color: #8B0000;
+}
+
+.box::before{
+	content:"The Butler's Garter Snake: "
+}
+
+.box::after {
+    content: " ➥"
+}   
+   
+#c {
+    border: 2px solid #B22222;
+  padding: .5em;
+}
+
+/* Aside Styles */
+
+aside {
+	margin: 0 0 20px 20px;
+	padding: 1%;
+	border: 1px solid rgb(251, 151, 151);
+	width: 35%;
+	font-size: 0.9em;
+	background-color: khaki;
+}
+
+aside h2{
+	display: block;
+	font-size: 1.8em;
+	text-align: center;
+	border-bottom: 1px solid rgb(111, 111, 111);
+}
+
+aside ul{
+	font-size: 15px;
+	list-style-type: square;
+	color:hsl(315, 100%, 30%);
+}
+
+aside ul li:last-of-type{
+	font-weight: bold;
+}
+
+/* Navigation Styles */	
+
+nav {
+	display: table;
+	width: 96%;
+	margin: 0 auto;
+	float: none;
+}
+
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+
+nav ul li {
+	display: table-cell;
+	width: 15%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid rgba(127,96,17,1.00);
+	border-collapse: collapse;
+}
+
+nav ul li a {
+	color: #222;
+	text-decoration: none;
+	display: block;	
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	color: #222;
+	text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	background-color: #b34a48;
+	color: white;
+	text-decoration: underline;
+}
+
+/* List Styles */
+
+ul{
+	font-size: 15px;
+	list-style-type: disc;
+	color:#9c596a;
+}
+
+ul li:first-child {
+  color: crimson;
+  
+}
+
+ul ul li{
+   font-size: 15px;
+   list-style-type: circle;
+   color:#cc0066;
+}
+
+li:nth-child(2n+1) {
+  color: #B22222;
+}
+
+
+/* Footer Styles */
+
+footer {
+	text-align: center;
+	font-size: 1em;
+	margin-top: 4%;
+	border-top: 3px outset #cf7b79;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	clear: both;
+	padding-bottom: 20px;
+}
+
+em {
+    color: darkred;
+}

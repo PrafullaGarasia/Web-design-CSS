@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Application Form</title>
+        <link href="css/myersReset.css" rel="stylesheet" />
+        <link href="css/external.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img src="img/scc-open-graph-image.jpg" alt="st.clair logo">
+                <figcaption>St.Clair logo.stclaircollege.ca<a href="https://www.stclaircollege.ca/">[Logo:St.Clair College]</a></figcaption>
+            </figure>
+            <nav>
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">programs and courses</a></li>
+                  <li><a href="#">admissions</a></li>
+                  <li><a href="#">about us</a></li>
+               </ul>
+            </nav>
+         </header>
+         <section>
+             <h1>college application form</h1>
+         
+        <form action="#" method="get">
+            <fieldset>
+
+                <legend>Student Information</legend>
+
+                <label for="firstName">First Name:</label>
+                <input autofocus type="text" placeholder="Please enter your First Name " id="firstName" name="firstName" required/>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" placeholder="Please enter your Last Name " id="lastName" name="lastName" required/>
+
+                <label for="email">Contact Email:</label>
+                <input type="email" placeholder="Please enter your Email " id="email" name="email" required/>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"/>
+
+                <label for="street">Street address:</label>
+                <input type="text" id="street" name="street"/>
+
+                <label for="city">City:</label>
+				<input type="text" name="city" id="city" value="Windsor"/>
+
+                <label for="province">Province:</label>
+				<input type="text" name="province" id="province" value="ON"/>
+
+                <label for="zip">Postal code:</label>
+				<input type="text" name="zip" id="zip" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$"/>
+
+                <label for="phone">Phone number:</label>
+				<input type="tel" name="phone" id="phone" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+                
+                <label for="sid">Student ID:</label>
+				<input type="text" name="sid" id="sid" required/>
+    
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Preferred time for the course:</legend>
+
+                <label for="evening">Evening Course</label>
+                <input type="radio" id="evening" name="enrollIn" value="evening"/>
+                <label for="weekend">Weekend Course</label>
+                <input type="radio" id="weekend" name="enrollIn" value="weekend"/>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Which course will you get admission in?</legend>
+
+                <label for="course">Course Name:</label>
+				<input name="favCourse" id="course" type="text" list="courseType"/>
+				<datalist id="courseType">
+					<option value="Adobe Illustrator - Digital Illustration Design I - ONT 232">
+					<option value="GIS Software - ARCVIEW - ONT219">
+					<option value="Introduction to Geographic Information Systems - ONT 230">
+					<option value="Introduction to Project Management - ONT 118">
+					<option value="Global Positioning Systems - ONT 179">
+					<option value="Communication/Professional Practices - ONT 174">
+				</datalist>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Submit"/>
+        </form>
+    </section>
+        <footer>
+            <p>&copy; 2022 - WEB 210 Assignment-8 Prafulla Kalusinh Garasia(0797964)</p> 
+        </footer>
+    </body>
+</html>
+

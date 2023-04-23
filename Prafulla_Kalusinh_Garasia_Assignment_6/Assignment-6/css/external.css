@@ -1,0 +1,308 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'cormorant_garamondmedium';
+	src: url('../font/cormorantgaramond-medium-demo.html');
+    src: url('../font/cormorantgaramond-medium-webfont.eot') format('embedded-opentype'),
+         url('../font/cormorantgaramond-medium-webfont.woff2') format('woff2'),
+         url('../font/cormorantgaramond-medium-webfont.woff') format('woff'),
+         url('../font/cormorantgaramond-medium-webfont.ttf') format('truetype'),
+         url('../font/cormorantgaramond-medium-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'prataregular';
+    src: url('../font/prata-regular-demo.html');
+    src: url('../font/prata-regular-webfont.eot') format('embedded-opentype'),
+         url('../font/prata-regular-webfont.woff2') format('woff2'),
+         url('../font/prata-regular-webfont.woff') format('woff'),
+         url('../font/prata-regular-webfont.ttf') format('truetype'),
+         url('../font/prata-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+	Assignment:6
+	Author: Prafulla Kalusinh Garasia
+	Student No.: 0797964
+    Date:   2022-03-02
+	Filename: external.css
+	Copyright: 2022-All rights reserved
+   
+*/
+
+/*
+Color Guide:
+
+1.rgb(121, 24, 48)
+2.rgb(109, 4, 22)
+3.rgb(204, 14, 14)
+4.hsl(0, 100%, 20%)
+5.rgb(179, 0, 0)
+6.hsl(120, 100%, 10%)
+7.rgba(60, 0, 0,1)
+8.hsl(0, 100%, 35%)
+9.hsl(0, 100%, 35%)
+*/
+
+/*
+Typography Guide:
+
+1.'Arvo','Times New Roman', Times, serif
+2.'Abril Fatface','Times New Roman', Times, cursive
+3.'Noto Serif Display', Times, serif
+4.'Prata', Times, serif;
+5.Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif - 1.5em
+*/
+
+/*
+Table of Contents:
+
+1.HTML & Body Styles
+2.Main Styles
+3.Heading Styles
+4.Section Styles
+5.Article Styles
+6.Paragraph Styles
+7.Figure Styles
+8.Aside Styles
+9.List Styles
+10.Footer Styles
+*/
+
+/*1.HTML & Body Styles*/
+
+html 
+{	
+	margin: 0px auto;
+}
+
+body 
+{
+	width: 90%;
+	padding-left: 4.50%;
+	padding-right: 4.50%;
+	margin: 0px auto auto auto;
+	background-repeat:no-repeat;
+	background-size: cover;
+	border:5px double hsl(337, 91%, 22%);
+	border-radius:20px;
+	background-image: radial-gradient(circle, #f9e6eb, #f9eaef, #faeef2, #faf1f5, #fbf5f8, #fbf5f8, #fbf5f8, #fbf5f8, #faf1f5, #faeef2, #f9eaef, #f9e6eb);
+}
+
+body p
+{	
+	margin: 3.5% 1%;
+	font-size: 1.7em;
+	font-family: 'cormorant_garamondmedium', 'Times', serif;
+	font-style: normal;
+	line-height: 1.2em;
+}
+
+/* 2.Main Styles */
+
+main
+{ 
+	display: table;
+}
+
+/* 3.Heading Styles */
+
+h1
+{	
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'Abril Fatface','Times New Roman', Times, cursive;
+	font-size: 4em;
+	margin: 10px 0 10px ;
+	color:rgb(121, 24, 48);
+	text-decoration-line: underline;
+	text-decoration-color: rgb(109, 4, 22); 
+	border: 10px solid hsl(0, 100%, 35%);
+  	padding: 12px;  	
+}
+
+h2
+{	
+	font-family: 'Noto Serif Display', Times, serif;
+	font-size: 2.2em;
+	text-align: justify;
+	margin: 0 0 10px ;
+	padding: 12px;
+	color:rgb(204, 14, 14);
+}
+
+	
+/* 4.Section Styles */
+
+section
+{
+	display: table-cell;
+	width: 305px;
+	background-image: linear-gradient(to bottom, #f9c6e3, #f7c9e2, #f4cce2, #f2cee1, #efd1e1, #edcfdf, #ebcdde, #e9cbdc, #e7c5d8, #e5bed4, #e3b8d0, #e1b1cc);
+}
+
+section img
+{	
+	width:220px;
+	border-radius: 10%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+/* 5.Article Styles */
+
+article
+{ 
+	display: table-cell;
+	padding: 10px;
+	background-image: linear-gradient(to bottom, #d16ba5, #d780b0, #dc93bc, #e1a7c7, #e6bad2, #e7c0d5, #e8c5d9, #e9cbdc, #e7c5d8, #e5bed4, #e3b8d0, #e1b1cc);
+}
+
+article img
+{	
+	width:200px;
+	border-radius: 10%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+article p:first-of-type::first-letter 
+{	
+  	font-size: 150%;
+}
+
+article p
+{	
+	font-size: 1.5em;
+}
+
+article p:nth-of-type(1)
+{	
+	margin: 0 0 10px ;
+	text-align: justify;
+	color:hsl(0, 100%, 20%);
+}
+
+article p:nth-of-type(2)
+{	
+	margin: 0 0 10px ;
+	color:rgb(179, 0, 0);
+	text-align: justify;
+}
+
+/* 6.Paragraph Styles*/
+
+p em 
+{	
+	font-style: italic;
+}
+
+p:nth-of-type(2)
+{	
+	letter-spacing: 0.02em;
+}
+
+/* 7.Figure Styles */
+
+figure 
+{	
+  	padding: 10px;
+  	margin: auto;
+}
+
+img
+{	
+	width:200px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	filter: drop-shadow(8px 8px 10px gray);
+}
+
+figcaption 
+{	
+	color:hsl(120, 100%, 10%);
+	font-style: italic;
+	padding: 2px;
+	text-align: center;
+	font-size:1.2em;
+	text-decoration: underline; 
+}
+
+/* 8.Aside Styles */
+
+aside
+{
+	display: table-cell;
+	font-size: 1em;
+	width: 310px;
+	padding: 10px;
+	background-image: linear-gradient(to bottom, #f9c6e3, #f7c9e2, #f4cce2, #f2cee1, #efd1e1, #edcfdf, #ebcdde, #e9cbdc, #e7c5d8, #e5bed4, #e3b8d0, #e1b1cc);
+}
+
+/* 9.List Styles */
+
+ul
+{
+	font-size: 18px;
+	list-style-type: square;
+	color:rgba(60, 0, 0,1);
+}
+
+ul li:first-child 
+{
+  	color: hsl(0, 100%, 35%);
+  	font-size: 18px;
+  
+}
+
+li:nth-child(2n+1) 
+{
+  	color:hsl(0, 100%, 35%);
+  	font-size: 18px;
+  	line-height: 2.25em;
+}
+
+li:nth-child(2n+2) 
+{
+  	color: rgba(60, 0, 0,1);
+  	font-size: 18px;
+  	line-height: 2.25em;
+}
+
+li
+{
+	font-family: 'prataregular', 'Times', serif;
+	margin-left: 2em;
+}
+
+ol
+{
+	list-style: decimal;
+}
+
+/* 10.Footer Styles */
+
+footer 
+{	
+	margin-top: 4%;
+	border-top: 3px outset rgb(102, 0, 51,0.6);
+	clear: both;
+	padding-bottom: 20px;	
+}
+
+footer p 
+{	
+	text-align: center;
+	font-size: 2em;
+	font-family: 'Arvo','Times New Roman', Times, serif;
+	color:hsl(0, 100%, 35%);
+
+}

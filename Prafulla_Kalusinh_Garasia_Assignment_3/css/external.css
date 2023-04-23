@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/*
+   
+	Assignment:3
+	Author: Prafulla Kalusinh Garasia
+	Student No.: 0797964
+    Date:   2022-02-08
+	Filename: external.css
+   
+*/
+
+html {
+	height: 100%;
+	margin: 0px auto;
+	font-size: 14px;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	max-width: 900px;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	margin: 0px auto auto auto;
+	clear: none;
+	float: none;
+	min-height: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+	background: linear-gradient(to right, #25c481, #25b7c4);
+	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+}
+
+body p{
+	margin: 3.5% 1%;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	font-style: normal;
+	height: 100%;
+}
+
+/* Heading Styles */
+
+main h1{
+  font-size: 90px;
+  color: hsl(0, 0%, 100%);
+  background-color:rgba(204, 0, 0,1);
+  position:relative;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2{
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+  background-color:rgba(255, 0, 0,0.6);
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+h3{
+	line-height: normal;
+	margin: 0 0 10px ;
+	color:hsl(0, 0%, 95%);
+	font-size: 1.9em;
+	text-align: left;
+}
+h1,h2,h3 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* Navigation Styles */	
+
+nav {
+	margin: 0 0 8px;
+	display: table;
+	width: 100%;
+	float: none;
+}
+
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+
+nav ul li {
+	display: table-cell;
+	width: 15%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid rgba(127,96,17,1.0);
+	border-collapse: collapse;
+}
+
+nav ul li a {
+	font-size: 1.5em;
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	display: block;	
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	background-color: rgba(0, 0, 0,0.6);
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	background-color: #b34a48;
+	color: hsl(0, 0%, 100%);
+	text-decoration: underline;
+}
+
+/* List Styles */
+
+ul{
+	font-size: 18px;
+	list-style-type: disc;
+	color:rgba(60, 0, 0,1);
+}
+
+ul li:first-child {
+  color: hsl(0, 100%, 35%);
+  font-size: 18px;
+  
+}
+
+li:nth-child(2n+1) {
+  color:hsl(0, 100%, 35%);
+  font-size: 18px;
+  line-height: 2.25em;
+}
+
+li:nth-child(2n+2) {
+  color: rgba(60, 0, 0,1);
+  font-size: 18px;
+  list-style-type: none;
+  line-height: 2.25em;
+}
+
+/* Article Styles */
+
+article *:first-child {
+  font-size: 2.2em;
+}
+
+article p{
+	line-height: normal;
+	text-align:justify;
+}
+
+article h3::first-letter {
+  color:hsl(0, 0%, 95%);
+  font-size: 150%;
+}
+
+article {
+	font-size: 0.8em;
+	text-align: left;
+}
+
+/*Paragraph Styles*/
+
+p{
+	color:rgba(60, 0, 0,1);
+}
+
+p:first-of-type {
+  color: rgba(60, 0, 0,1);
+}
+
+/* Figure Styles */
+
+figure {
+  border: 1px solid rgb(204,204,204);
+  padding: 4px;
+  margin: auto;
+
+}
+
+figcaption {
+  background-color: rgba(0, 0, 0,0.8);
+  color: hsl(0, 0%, 100%);
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+/* Aside Styles */
+
+aside {
+	float: right;
+	margin: 0 0 20px 20px;
+	padding: 2%;
+	width: 50%;
+	font-size: 1em;
+	background-color: transparent;
+}
+
+aside h3{
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid hsl(0, 100%, 25%);
+}
+
+aside ul{
+	margin: 0 0 20px 20px;
+	font-size: 15px;
+	list-style-type: square;
+	color:hsl(315, 100%, 30%);
+}
+
+/* Footer Styles */
+
+footer {
+	text-align: center;
+	font-size: 1em;
+	margin-top: 4%;
+	border-top: 3px outset rgb(102, 0, 51,0.6);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	clear: both;
+	padding-bottom: 20px;
+	color: hsl(120, 100%, 5%);
+}

@@ -1,0 +1,231 @@
+@charset "utf-8";
+@font-face 
+{
+    font-family: 'abril_fatfaceregular';
+    src: url('../font/abrilfatface-regular-demo.html');
+    src: url('../font/abrilfatface-regular-webfont.eot') format('embedded-opentype'),
+         url('../font/abrilfatface-regular-webfont.woff2') format('woff2'),
+         url('../font/abrilfatface-regular-webfont.woff') format('woff'),
+         url('../font/abrilfatface-regular-webfont.ttf') format('truetype'),
+         url('../font/abrilfatface-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face 
+{
+    font-family: 'dm_serif_displayregular';
+    src: url('../font/dmserifdisplay-regular-demo.html');
+    src: url('../font/dmserifdisplay-regular-webfont.eot') format('embedded-opentype'),
+         url('../font/dmserifdisplay-regular-webfont.woff2') format('woff2'),
+         url('../font/dmserifdisplay-regular-webfont.woff') format('woff'),
+         url('../font/dmserifdisplay-regular-webfont.ttf') format('truetype'),
+         url('../font/dmserifdisplay-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+	Assignment:9
+	Author: Prafulla Kalusinh Garasia
+	Student No.: 0797964
+    Date:2022-04-06
+	Filename: external.css
+	Copyright: 2022-All rights reserved
+   
+*/
+
+/*
+Color Guide:
+
+1.rgb(255, 255, 255)
+2.#161515f5
+3.rgb(10, 10, 10)
+4.hsl(0, 100%, 20%)
+5.gray
+6.hsl(0, 100%, 35%)
+7.hsl(0, 0%, 4%)
+*/
+
+/*
+Typography Guide:
+
+1.'abril_fatfaceregular','Times New Roman', Times, cursive;
+2.'dm_serif_displayregular','Times New Roman', Times, serif;
+3.'Lora','Times New Roman', Times, serif;
+4.'Vollkorn',Georgia, 'Times New Roman', Times, serif;
+*/
+
+/*
+Table of Contents:
+
+1.HTML & Body Styles
+2.Main Styles
+3.Heading Styles
+4.Section Styles
+5.Article Styles
+6.Paragraph Styles
+7.Image Styles
+8.Aside Styles
+9.List Styles
+10.Footer Styles
+11.Media Query
+*/
+
+/*1.HTML & Body Styles*/
+
+html 
+{	
+	margin: 0px auto;
+}
+
+body 
+{
+	width: 90%;
+	padding-left: 4.50%;
+	padding-right: 4.50%;
+	margin: 0px auto auto auto;
+	border:3px solid #000000;
+	border-radius: 20px;
+	background-image: radial-gradient(circle, #665e5e, #898385, #aeabad, #d5d4d6, #ffffff);
+}
+
+/* 2.Main Styles */
+
+main
+{ 
+    overflow: hidden;
+}
+
+/* 3.Heading Styles */
+
+h1
+{	
+	text-align: center;
+	font-family: 'abril_fatfaceregular','Times New Roman', Times, cursive;
+	font-size: 4em;
+	margin: 10px 0 10px ;
+	color:rgb(255, 255, 255);
+	text-shadow: 2px 2px 8px #161515f5;
+	text-transform: uppercase;
+	text-decoration-color: rgb(255, 255, 255); 
+}
+
+h2
+{	
+	font-family: 'dm_serif_displayregular','Times New Roman', Times, serif;
+	font-size: 2em;
+	text-transform: capitalize;
+	margin: 0 0 10px ;
+	padding-top: 12px;
+	color:rgb(10, 10, 10);
+}
+	
+h3
+{
+	font-family: 'dm_serif_displayregular','Times New Roman', Times, serif;
+	font-size: 1.5em;
+}
+/* 4.Section Styles */
+
+section
+{
+	float: left;
+	width: 320px;
+	padding: 10px;
+}
+
+/* 5.Article Styles */
+
+article
+{ 
+	float: left;
+	width: 655px;
+	padding: 10px;
+}
+
+article p:first-of-type::first-letter 
+{	
+  	font-size: 170%;
+}
+
+/* 6.Paragraph Styles*/
+
+p
+{	
+	margin: 3.5% 1%;
+	font-size: 1.5em;
+	color:hsl(0, 100%, 20%);
+	font-family: 'Lora','Times New Roman', Times, serif;
+	font-style: normal;
+	line-height: 1.2em;
+}
+
+/* 7.Image Styles */
+
+img
+{	
+	width:250px;
+	margin-top: 10px;
+	filter: drop-shadow(8px 8px 10px gray);
+	border-radius: 15px;
+}
+
+/* 8.Aside Styles */
+
+aside
+{
+	float: left;
+	font-size: 1em;
+	width: 310px;
+	padding: 10px;
+}
+
+/* 9.List Styles */
+
+ul
+{
+	list-style-type: square;
+}
+
+li
+{
+	margin-left: 2em;
+	font-family: 'Lora','Times New Roman', Times, serif;
+	font-size: 1.3em;
+	line-height: 2.25em;
+	color:hsl(0, 100%, 35%);
+}
+
+/* 10.Footer Styles */
+
+footer 
+{	
+	border-top: 3px outset rgb(255, 255, 255);
+}
+
+footer p 
+{	
+	text-align: center;
+	font-size: 1.7em;
+	font-family: 'Vollkorn',Georgia, 'Times New Roman', Times, serif;
+	color:hsl(0, 0%, 4%);
+}
+
+/* 11.Media Query*/
+@media screen and (max-width: 640px)
+{
+	section, article, aside
+	{
+		float: none;
+        width: 80%;
+        margin: 0 auto;
+	}
+	main
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}	
+}

@@ -1,0 +1,245 @@
+@charset "utf-8";
+@font-face 
+{
+    font-family: 'fira_sans_extra_condensedRg';
+    src: url('../font/firasansextracondensed-regular-demo.html');
+    src: url('../font/firasansextracondensed-regular-webfont.eot') format('embedded-opentype'),
+         url('../font/firasansextracondensed-regular-webfont.woff2') format('woff2'),
+         url('../font/firasansextracondensed-regular-webfont.woff') format('woff'),
+         url('../font/firasansextracondensed-regular-webfont.ttf') format('truetype'),
+         url('../font/firasansextracondensed-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+	Assignment:11
+	Author: Prafulla Kalusinh Garasia
+	Student No.: 0797964
+    Date:2022-04-20
+	Filename: external.css
+	Copyright: 2022-All rights reserved   
+*/
+
+/*
+Color Guide:
+
+1.#C41D44
+2.whitesmoke
+3.#E4EB12
+
+*/
+
+/*
+Typography Guide:
+
+1.'Oswald',Verdana, Geneva, Tahoma, sans-serif
+2.'Roboto Condensed',Arial, Helvetica, sans-serif
+3.'fira_sans_extra_condensedRg',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+*/
+
+/*
+Table of Contents:
+
+1.HTML & Body Styles
+2.Main Styles
+3.Navigation Styles
+4.Heading Styles
+5.Article Styles
+6.Paragraph Styles
+7.Video Styles
+8.Image Styles
+9.Figure Styles
+10.Footer Styles
+*/
+
+/*1.HTML & Body Styles*/
+
+html 
+{	
+	margin: 0px auto;
+	background-image: linear-gradient(to left top, #c41d44, #e35132, #f48415, #f4b800, #e4eb12);
+}
+
+body 
+{
+	width: 900px;
+	padding-left: 4.50%;
+	padding-right: 4.50%;
+	margin: 0px auto auto auto;
+	background-repeat: no-repeat;
+	border:1px transparent;
+	border-radius: 20px;
+    background-size: cover;
+	background-image: linear-gradient(to right top, #c41d44, #e35132, #f48415, #f4b800, #e4eb12);
+	-moz-box-shadow: #e4eb12 20px 0px 25px,  #c41d44 -20px 0px 25px;
+	-webkit-box-shadow: #e4eb12 20px 0px 25px,  #c41d44 -20px 0px 25px;
+	box-shadow: #e4eb12 20px 0px 25px,  #c41d44 -20px 0px 25px;
+}
+
+/* 2.Main Styles */
+
+main
+{ 
+    overflow: hidden;
+}
+
+/* 3.Navigation Styles */
+
+nav
+{
+	overflow: hidden;
+  	background-color: #C41D44;
+}
+
+nav a
+{
+	float: left;
+  	color: whitesmoke;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'fira_sans_extra_condensedRg',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav a:hover 
+{
+	color: #E4EB12;
+	text-decoration:underline;
+}
+
+/* 4.Heading Styles */
+
+h1
+{	
+	text-align: center;
+	font-size: 4em;
+	margin: 10px 0 10px ;
+	text-shadow: 2px 2px 8px #C41D44;
+	
+}
+
+h2
+{	
+	font-size: 2em;
+	margin: 0 0 10px ;
+	padding-top: 12px;
+}
+
+h1,h2
+{
+	font-family: 'Oswald',Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: uppercase;
+	color:#E4EB12;
+}
+
+/*5.Article Styles */
+
+article ul
+{
+	margin: 0 0 20px 20px;
+	list-style-type: square;
+	
+}
+article li
+{
+	font-size: 1.5em;
+	color:#E4EB12;
+	line-height: normal;
+	font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
+}
+
+/* 6.Paragraph Styles*/
+
+p
+{	
+	margin: 3.5% 1%;
+	font-size: 1.5em;
+	color:whitesmoke;
+	font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
+	font-style: normal;
+	line-height: 1.2em;
+}
+
+/* 7.Video Styles*/
+
+video 
+{
+	width: 350px;
+	padding-top: 2%;
+	display: block;
+	margin: 0 auto;
+}
+
+/* 8.Image Styles */
+
+img
+{	
+	width: 130px;
+    height: 130px;
+    object-fit: cover;
+	border-radius: 15px;
+	transition: 0.8s;
+}
+
+img:hover
+{
+	transform: scale(1.5);
+	box-shadow: 1px 1px 5px #C41D44;
+}
+
+/* 9.Figure Styles */
+
+figure
+{
+	position: relative;
+	float: left;
+	margin: 20px;
+}
+
+figure:hover
+{
+	z-index: 100;
+	padding-bottom: 4%;
+	padding-left: 4%;
+}
+
+figcaption
+{
+	visibility: hidden;
+  	background-color: #E4EB12;
+  	color: #C41D44;
+  	text-align: center;
+  	border-radius: 6px;
+  	padding: 5px 0;
+	top: 70%;
+	left: 45%;
+  	position: absolute;
+  	z-index: 1;
+	font-size: 1em;
+}
+
+figure:hover figcaption
+{
+	visibility: visible;
+	opacity: 1;	
+	
+}
+
+/* 10.Footer Styles */
+
+footer 
+{	
+	border-top: 2px outset #C41D44;
+}
+
+footer p 
+{	
+	text-align: center;
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
+	color:whitesmoke;
+}

@@ -1,0 +1,296 @@
+@charset "utf-8";
+@font-face 
+{
+    font-family: 'arvobold';
+    src: url('../font/arvo-bold-demo.html');
+    src: url('../font/arvo-bold-webfont.eot') format('embedded-opentype'),
+         url('../font/arvo-bold-webfont.woff2') format('woff2'),
+         url('../font/arvo-bold-webfont.woff') format('woff'),
+         url('../font/arvo-bold-webfont.ttf') format('truetype'),
+         url('../font/arvo-bold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face 
+{
+    font-family: 'bree_serifregular';
+    src: url('../font/breeserif-regular-demo.html');
+    src: url('../font/breeserif-regular-webfont.eot') format('embedded-opentype'),
+         url('../font/breeserif-regular-webfont.woff2') format('woff2'),
+         url('../font/breeserif-regular-webfont.woff') format('woff'),
+         url('../font/breeserif-regular-webfont.ttf') format('truetype'),
+         url('../font/breeserif-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+	Assignment-8
+	Author: Prafulla Kalusinh Garasia
+	Student No.: 0797964
+    Date: 2022-03-30
+	Filename: external.css
+	Copyright: 2022-All rights reserved 
+*/
+
+/*
+Color Guide:
+
+1.#63d471
+2.#fbb034
+3.#63d471
+4.rgb(226, 25, 19)
+5.white
+6.whitesmoke
+7.#231c1c
+8.hsl(0, 0%, 100%)
+9.rgb(20, 20, 20)
+10.#ffdd00
+
+*/
+
+/*
+
+Typography Guide:
+
+1.Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+2.'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+3.'bree_serifregular','Times New Roman', Times, serif;
+4.'arvobold', Georgia, 'Times New Roman', Times, serif;
+5.'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+6.Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+*/
+
+/*
+Table of Contents:
+
+1.HTML & Body Styles
+2.Section Styles
+3.Form Layout Styles 
+4.Legend Styles
+5.Form Input & Label Styles
+6.Figure Styles
+7.Navigation Styles
+8.List Styles
+9.Footer Styles
+*/
+
+
+/*1.HTML & Body Styles*/
+
+html 
+{
+	margin: 0px auto;
+	font-size: 14px;
+	background-color: #63d471;
+	background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+
+body 
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	margin: 0px auto auto auto;
+	font-size: 1.7em;
+	filter: drop-shadow(8px 8px 10px rgb(248, 248, 248));
+	background-color: #fbb034;
+	background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+
+/* 2.Section Styles */
+
+section 
+{
+	margin: 30px 3%;
+}
+
+section h1
+{
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-transform: uppercase;
+	padding-bottom: 2%;
+	font-size: 1.8em;
+	text-decoration: underline;
+}
+
+/* 3.Form Layout Styles */
+
+fieldset 
+{
+	background-color: #63d471;
+	background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+	border-radius: 20px;
+	font-size: 0.85em;
+	padding: 10px;
+	margin: 10px;
+}
+
+fieldset:nth-of-type(2) label, fieldset:nth-of-type(2) input
+{
+	width: 24%;
+	padding: 10px 18px;
+	margin: 2px 0;
+	display: inline-block;
+	border: 2px solid rgb(243, 227, 10);
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+/* 4.Legend Styles */
+
+legend 
+{
+	background-color: rgb(226, 25, 19);
+	color: white;
+	padding: 5px;
+	text-transform: capitalize;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* 5.Form Input & Label Styles */
+
+label, input
+{
+	display: block;
+}
+
+label
+{
+	color: whitesmoke;
+	text-transform: capitalize;
+	font-family: 'bree_serifregular','Times New Roman', Times, serif;
+}
+
+input 
+{
+	width: 60%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] 
+{
+	width: 28%;
+	background-color: rgb(226, 25, 19);
+	color: white;
+	padding: 14px 20px;
+	margin-left: 3%;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: .8em;
+	font-family: 'arvobold', Georgia, 'Times New Roman', Times, serif;
+}
+
+/*6.Figure Styles */
+
+figure 
+{
+    display: block;
+	margin-bottom: 2%;
+	margin-left: 25%;
+	margin-right: 25%;	
+}
+
+figure img 
+{
+	display: block;
+	margin: auto;
+	width: 300px;
+}
+
+figure figcaption 
+{
+	color: #231c1c;
+    text-align: center;
+	font-style: italic;
+}
+
+/* 7.Navigation Styles */	
+
+nav 
+{
+	margin: 0 0 8px;
+	display: table;
+	width: 100%;
+	float: none;
+}
+
+nav ul 
+{
+	display: table-row;
+	margin: 0;
+}
+
+nav ul li 
+{
+	display: table-cell;
+	width:100%;
+	text-align: center;
+	padding-top: 1%;
+	margin-right: 2%;
+}
+
+nav ul li a 
+{
+	font-size: 1em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;	
+	background-color: rgb(40, 121, 8);
+	color: hsl(0, 0%, 100%);
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li a:hover
+{
+	background-color: #ffdd00;
+    color: rgb(20, 20, 20);
+	text-decoration: underline;
+} 
+
+/* 8.List Styles */
+
+ul
+{
+	font-size: 1em;
+	list-style-type: none;	
+}
+
+li
+{
+	float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+/* 9.Footer Styles */
+
+footer 
+{
+	font-size: 1em;
+	margin-top: 1%;
+	padding-top:1%;
+	padding-bottom: 1%;
+	border-top: 3px outset rgb(40, 121, 8);	
+}
+
+footer p
+{
+	text-align: center;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 1em;
+}

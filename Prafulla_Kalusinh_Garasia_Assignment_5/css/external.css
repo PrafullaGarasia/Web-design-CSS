@@ -1,0 +1,291 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'cardobold';
+    src: url('cardo-bold-webfont.woff2') format('woff2'),
+         url('cardo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cardoitalic';
+    src: url('cardo-italic-webfont.woff2') format('woff2'),
+         url('cardo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cardoregular';
+    src: url('cardo-regular-webfont.woff2') format('woff2'),
+         url('cardo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+	Assignment:5
+	Author: Prafulla Kalusinh Garasia
+	Student No.: 0797964
+    Date:   2022-02-22
+	Filename: external.css
+	Copyright: 2022-All rights reserved
+   
+*/
+
+/*
+Color Guide:
+
+1.hsl(0, 100%, 35%):medium dark shade of red
+2.#eaf818: shade of yellow
+3.#f6fc9c: Very soft yellow
+4.#f9ea8f: Very soft yellow
+5.#aff1da: Very soft cyan - lime green
+6.rgba(127,96,17,1.0): Dark orange [Brown tone]
+7.rgba(60, 0, 0,1):very dark shade of red
+8.#434343:shade of gray
+9.#B70B0D: medium dark shade of pink-red
+10.hsl(0, 100%, 20%): Very dark red
+11.rgb(179, 0, 0): Strong red
+12.hsl(120, 100%, 10%): Very dark lime green
+*/
+
+/*
+Typography Guide:
+
+1.body p:'Zilla Slab', serif - 1.7em
+2.main h1: "Cardo", serif, cursive - 4em
+3.h2:first-of-type:"Lobster", cursive - 2em
+4.p strong: 'Caveat', cursive - 1.2em
+5.footer:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif - 1.5em
+*/
+
+/*
+Table of Contents:
+
+1.HTML & Body Styles
+2.Heading Styles
+3.Article Styles
+4.Section Styles
+5.Paragraph Styles
+6.Figure Styles
+7.Aside Styles
+8.Footer Styles
+*/
+
+/*1.HTML & Body Styles*/
+
+html 
+{	
+	margin: 0px auto;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-color: #eaf818;
+	background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+}
+
+body 
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 900px;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	margin: 0px auto auto auto;
+	font-size: 1em;
+	background-repeat:no-repeat;
+	background-size: cover;
+	border:4px double hsl(0, 100%, 35%);
+	border-radius:30px;
+	background-color: #f9ea8f;
+	background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+}
+
+body p
+{	
+	margin: 3.5% 1%;
+	font-size: 1.7em;
+	font-family: 'Zilla Slab', serif;
+	font-style: normal;
+	height: 100%;
+	line-height: 1.2em;
+}
+
+/* 2.Heading Styles */
+
+main h1
+{	
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: "Cardo", serif, cursive, Verdana;
+	font-size: 4em;
+	font-weight: 600;
+	margin: 10px 0 10px ;
+	color:rgba(127,96,17,1.0);
+	text-decoration-line: underline;
+	text-decoration-color: rgba(127,96,17,1.0);  
+}
+
+h2
+{	
+	font-family: "Lobster", cursive;
+	font-family: "Redressed", cursive;
+	font-size: 2.2em;
+	text-align: left;
+	margin: 0 0 10px ;
+	color:rgba(60, 0, 0,1);
+}
+	
+h3
+{	
+	font-size: 2em;
+	background: -webkit-linear-gradient(#434343, #B70B0D);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 2em;
+	text-decoration-line: underline;
+	text-decoration-color:#B70B0D;
+}
+/* 3.Section Styles */
+
+section p,h2
+{	
+	text-align:center;
+}
+
+/* 4.Article Styles */
+
+article p:first-of-type::first-letter 
+{	
+  font-size: 150%;
+}
+
+article 
+{	
+	font-size: 0.8em;
+}
+
+article p:nth-of-type(1)
+{	
+	margin: 0 0 10px ;
+	text-align: justify;
+	color:hsl(0, 100%, 20%);
+}
+
+article p:nth-of-type(2)
+{	
+	margin: 0 0 10px ;
+	color:rgb(179, 0, 0);
+}
+
+article p:nth-of-type(3)
+{	
+	margin: 0 0 10px ;
+	color:hsl(0, 100%, 20%);
+}
+
+article h2
+{	
+	font-family: "Lobster", cursive;
+	font-family: "Redressed", cursive;
+	font-size: 2.7em;
+	text-align: center;
+	margin: 0 0 10px ;
+	color:rgba(60, 0, 0,1);
+	text-decoration-line: underline;
+	text-decoration-color:rgba(60, 0, 0,1);
+}
+
+/*5.Paragraph Styles*/
+
+p em 
+{	
+	font-style: italic;
+}
+
+p strong 
+{	
+	font-size:1.2em;
+	font-weight: 200;
+	letter-spacing: 0.1em;
+	font-family: 'Caveat', cursive;
+}
+
+p:nth-of-type(2)
+{	
+	letter-spacing: 0.02em;
+}
+
+/* 6.Figure Styles */
+
+figure 
+{	
+  padding: 2px;
+  margin: auto;
+}
+
+img:nth-child(3)
+{
+	width:210px;
+	border-radius: 5%;
+	position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+img
+{	
+	width:210px;
+	border-radius: 10%;
+	float:right;
+	padding: 10px;
+}
+
+figcaption 
+{	
+	color:hsl(120, 100%, 10%);
+	font-style: italic;
+	padding: 2px;
+	text-align: center;
+	font-size:1.2em;
+	text-decoration: underline; 
+}
+
+/* 7.Aside Styles */
+
+aside
+{	
+	float: right;
+	margin: 0 0 20px 20px;
+	padding: 2%;
+	width: 28%;
+	font-size: 1em;
+	background-color: transparent;
+}
+
+/* 8.Footer Styles */
+
+footer 
+{	
+	margin-top: 4%;
+	border-top: 3px outset rgb(102, 0, 51,0.6);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	clear: both;
+	padding-bottom: 20px;	
+}
+
+footer p 
+{	
+	text-align: center;
+	font-size: 1.5em;
+	color:hsl(0, 100%, 35%);
+}

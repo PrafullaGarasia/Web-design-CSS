@@ -1,0 +1,246 @@
+@charset "utf-8";
+@font-face 
+{
+    font-family: 'fira_sans_extra_condensedRg';
+    src: url('../font/firasansextracondensed-regular-demo.html');
+    src: url('../font/firasansextracondensed-regular-webfont.eot') format('embedded-opentype'),
+         url('../font/firasansextracondensed-regular-webfont.woff2') format('woff2'),
+         url('../font/firasansextracondensed-regular-webfont.woff') format('woff'),
+         url('../font/firasansextracondensed-regular-webfont.ttf') format('truetype'),
+         url('../font/firasansextracondensed-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+	Assignment:10
+	Author: Prafulla Kalusinh Garasia
+	Student No.: 0797964
+    Date:2022-04-12
+	Filename: external.css
+	Copyright: 2022-All rights reserved   
+*/
+
+/*
+Color Guide:
+
+1.rgb(255, 255, 255)
+2.#fffffff5
+3.rgb(255, 222, 4)
+4.hsl(0, 0%, 100%)
+5.gray
+6.rgba(255, 213, 2, 0.5)
+7.rgb(255, 213, 2)
+8.rgb(3, 3, 3)
+9.#333
+10.#f2f2f2
+11.#ddd
+12.black
+13.rgb(255, 255, 255)
+14.hsl(0, 0%, 4%)
+*/
+
+/*
+Typography Guide:
+
+1.'Oswald',Verdana, Geneva, Tahoma, sans-serif
+2.'Roboto Condensed',Arial, Helvetica, sans-serif
+3.'fira_sans_extra_condensedRg',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+4.'Vollkorn',Georgia, 'Times New Roman', Times, serif;
+*/
+
+/*
+Table of Contents:
+
+1.HTML & Body Styles
+2.Main Styles
+3.Heading Styles
+4.Section Styles
+5.Paragraph Styles
+6.Image Styles
+7.Figure Styles
+8.Aside Styles
+9.Navigation Styles
+10.Footer Styles
+*/
+
+/*1.HTML & Body Styles*/
+
+html 
+{	
+	margin: 0px auto;
+}
+
+body 
+{
+	padding-left: 4.50%;
+	padding-right: 4.50%;
+	margin: 0px auto auto auto;
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-image: linear-gradient(to right bottom, #000000, #2d2827, #544d48, #7b766b, #9ea494);
+}
+
+/* 2.Main Styles */
+
+main
+{ 
+    overflow: hidden;
+}
+
+/* 3.Heading Styles */
+
+h1
+{	
+	text-align: center;
+	font-size: 4em;
+	margin: 10px 0 10px ;
+	text-shadow: 2px 2px 8px #fffffff5;
+	text-decoration-color: rgb(255, 255, 255); 
+}
+
+h2
+{	
+	font-size: 2em;
+	margin: 0 0 10px ;
+	padding-top: 12px;
+}
+
+h1,h2
+{
+	font-family: 'Oswald',Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: uppercase;
+	color:rgb(255, 222, 4);
+}
+
+/* 4.Section Styles */
+
+section img
+{	
+	float: left;
+  	padding: 10px;
+	display: block;
+	box-sizing: border-box;
+}
+
+/* 5.Paragraph Styles*/
+
+p
+{	
+	margin: 3.5% 1%;
+	font-size: 1.5em;
+	color:hsl(0, 0%, 100%);
+	font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
+	font-style: normal;
+	line-height: 1.2em;
+}
+
+/* 6.Image Styles */
+
+img
+{	
+	width: 250px;
+    height: 300px;
+    object-fit: cover;
+	filter: drop-shadow(8px 8px 10px gray);
+	border-radius: 15px;
+	transition: 0.8s;
+}
+
+img:hover
+{
+	transform: scale(1.5);
+	box-shadow: 1px 1px 5px rgba(255, 213, 2, 0.5);
+}
+
+/* 7.Figure Styles */
+
+figure
+{
+	position: relative;
+	float: left;
+	margin: 20px;
+}
+
+figure:hover
+{
+	z-index: 100;
+	padding-bottom: 4%;
+	padding-left: 4%;
+}
+
+figcaption
+{
+	visibility: hidden;
+  	background-color: rgb(255, 213, 2);
+  	color: rgb(3, 3, 3);
+  	text-align: center;
+  	border-radius: 6px;
+  	padding: 5px 0;
+	top: 70%;
+	left: 45%;
+  	position: absolute;
+  	z-index: 1;
+	font-size: 1em;
+}
+
+figure:hover figcaption
+{
+	visibility: visible;
+	opacity: 1;	
+	font-size: 150%;
+}
+
+/* 8.Aside Styles */
+
+aside 
+{
+	float: left;
+	width: 100%;
+	margin: 0 0 20px 20px;
+	padding: 1%;
+	font-size: 1em;
+}
+
+/* 9.Navigation Styles */
+
+nav
+{
+	overflow: hidden;
+  	background-color: #333;
+}
+
+nav a
+{
+	float: left;
+  	color: #f2f2f2;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'fira_sans_extra_condensedRg',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav a:hover 
+{
+	background-color: #ddd;
+	color: black;
+	font-size: 2em;
+	text-decoration:underline;
+}
+  
+/* 10.Footer Styles */
+
+footer 
+{	
+	border-top: 2px outset rgb(255, 255, 255);
+}
+
+footer p 
+{	
+	text-align: center;
+	font-size: 1.7em;
+	font-family: 'Vollkorn',Georgia, 'Times New Roman', Times, serif;
+	color:hsl(0, 0%, 4%);
+}
